@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجم</title>
+    <style>
+        form{
+            margin-top: 50px;
+            border-radius: 10px;
+            border: solid 2px;
+            box-shadow: 3px ,4px ,8px rgb(25, 160, 194);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            position: relative;
+
+
+            
+        }
+        legend{
+            text-align: center;
+            color: rgb(255, 30, 0)
+        }
+        fieldset{
+            border: solid 3px rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 8px;
+            box-shadow: rgb(3, 118, 141) 3px 8px 5px;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            justify-items: center;
+            align-items: center;
+           margin: auto;
+        }
+
+          .sup{
+            color: rgb(255, 255, 255);
+            background: rgb(70, 238, 168);
+            width: 300px;
+            transform: translate(0px,0px);
+            box-shadow: 3px 5px 4px rgb(84, 209, 231);
+            border-radius: 10px;
+            border: rgb(197, 31, 16); ;
+          }
+          .sup:hover{
+           cursor: pointer;
+            background: rgb(134, 105, 101);
+            transform: translate(1.5px,1.5px);
+            border: rgb(197, 31, 16); ;
+
+          }
+    </style>
+</head>
+<body>
+    <form action="index.php" method="get">
+        <fieldset> 
+        <legend > مرحبا بكم </legend>
+            <label for="name"> Name    :     </label>
+            <input type="text" name="name" id="name"> <br> 
+            <label for="pa"> Passwrd: </label>
+            <input type="password" name="pa"  id="pa"><br>
+                       gender :
+            <br>
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="male">male
+            <br>
+            <input class="sup" type="submit" value="Send Information" onclick="location.href=''">
+        </fieldset>
+    </form>
+    <script>
+        document.cookie = "username=monssr; expires="+ new Date(new Date().getTime()+7*24*60*60*1000).toUTCString()+"; path=/" ;
+    </script>
+    
+</body>
+</html>
